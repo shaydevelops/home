@@ -1,0 +1,33 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.statusBar.visible": false,
+    "telemetry.enableCrashReporter": false,
+    "workbench.editor.wrapTabs": true,
+    "workbench.colorTheme": "GitHub Light Default",
+    "workbench.editor.showTabs": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": true,
+    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontLigatures": true,
+    "editor.scrollBeyondLastLine": false,
+    "files.watcherExclude": {
+        "**/.git": true
+    },
+    "search.exclude": {
+        "**/.git": true
+    },
+    "window.titleBarStyle": "native",
+    "editor.fontSize": 14,
+    "workbench.activityBar.visible": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "terminal.integrated.macOptionIsMeta": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.vimrc",
+    "vim.camelCaseMotion.enable": true,
+}
