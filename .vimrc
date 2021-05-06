@@ -21,9 +21,6 @@ set cursorline
 "set incsearch
 "set undofile
 
-" If fzf is installed using Homebrew
-set rtp+=/usr/local/opt/fzf
-
 " more natural split panes
 " https://thoughtbot.com/blog/vim-splits-move-faster-and-more-naturally
 set splitbelow
@@ -40,23 +37,7 @@ set virtualedit=block
 "set wildmode=longest,list
 
 syntax on
-colorscheme spacegray
-
-" Customize fzf colors to match your color scheme
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+" colorscheme spacegray
 
 " make git gutter same colour as the line number column
 highlight clear SignColumn
@@ -87,8 +68,6 @@ nnoremap qq         :q!<Enter>
 nnoremap QQ         :q!<Enter>
 nnoremap wq         :wq<Enter>
 nnoremap WQ         :wq<Enter>
-inoremap wq         :wq<Enter>
-inoremap WQ         :wq<Enter>
 nnoremap zz         :w<Enter>
 
 " http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
@@ -108,8 +87,3 @@ map <silent> e <Plug>CamelCaseMotion_e
 sunmap w
 sunmap b
 sunmap e
-
-" vim-go settings
-" https://tpaschalis.github.io/vim-go-setup/
-let g:go_fmt_command = "goimports"
-let g:go_auto_type_info = 1
